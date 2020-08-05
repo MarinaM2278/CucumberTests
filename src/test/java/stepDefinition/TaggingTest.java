@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 
 public class TaggingTest {
 	
-	@Given("This is valid login test")
+	@Given("This is login test")
     public void this_is_valid_login_test() {
 
         System.out.println("This is login test.....");
@@ -23,7 +23,7 @@ public class TaggingTest {
         System.out.println("This is search test.....");
     }
 
-    @Given("This is Advanced search")
+    @Given("This is Advanced search test")
     public void this_is_Advanced_search() {
         System.out.println("This is advanced search test.....");
     }

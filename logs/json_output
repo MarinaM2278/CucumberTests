@@ -3,79 +3,44 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-05T19:38:58.064Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.HooksSteps.setUp()"
-            }
-          }
-        ],
         "line": 3,
-        "name": "Adding a user",
+        "name": "",
         "description": "",
-        "id": "to-test-add--edit-and-delete-user;adding-a-user",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.HooksSteps.endTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 8816000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "On some page",
+            "name": "I launch Chrome browser",
             "match": {
-              "location": "stepDefinition.HooksSteps.on_some_page()"
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_launch_chrome_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 2471000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Add some user",
+            "name": "I open OrangeHRM home page",
             "match": {
-              "location": "stepDefinition.HooksSteps.add_some_user()"
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_open_orange_hrm_home_page()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is added",
-            "match": {
-              "location": "stepDefinition.HooksSteps.user_is_added()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-08-05T19:38:58.276Z",
+        "start_timestamp": "2020-08-05T22:40:36.392Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "match": {
@@ -83,10 +48,99 @@
             }
           }
         ],
-        "line": 9,
-        "name": "Editing the user",
+        "line": 7,
+        "name": "Logo presence on OrangeHRM home page",
         "description": "",
-        "id": "to-test-add--edit-and-delete-user;editing-the-user",
+        "id": "check-login-page-feature-for-orangehrm;logo-presence-on-orangehrm-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1090000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify that the logo is present on the page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_verify_that_the_logo_is_present_on_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5957000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch Chrome browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2160000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open OrangeHRM home page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_open_orange_hrm_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T22:40:49.185Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login to OrangeHRM with valid credentials",
+        "description": "",
+        "id": "check-login-page-feature-for-orangehrm;login-to-orangehrm-with-valid-credentials",
         "after": [
           {
             "result": {
@@ -102,53 +156,89 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "On some page",
-            "match": {
-              "location": "stepDefinition.HooksSteps.on_some_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Search for the existing user",
-            "match": {
-              "location": "stepDefinition.HooksSteps.search_for_the_existing_user()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
+              "duration": 270000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "Edit some user",
+            "name": "Enter username and password",
             "match": {
-              "location": "stepDefinition.HooksSteps.edit_some_user()"
+              "location": "stepDefinition.OrangeHRMLoginSteps.enter_username_and_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 1835000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "User is edited",
+            "name": "Click on login button",
             "match": {
-              "location": "stepDefinition.HooksSteps.user_is_edited()"
+              "location": "stepDefinition.OrangeHRMLoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 559000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User must successfully login to the Dashboard page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 292000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.close_browser()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-08-05T19:38:58.319Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5796000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch Chrome browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2166000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open OrangeHRM home page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_open_orange_hrm_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T22:41:00.296Z",
         "before": [
           {
             "result": {
@@ -159,10 +249,10 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Deleting the user",
+        "line": 17,
+        "name": "Login to OrangeHRM with valid credentials",
         "description": "",
-        "id": "to-test-add--edit-and-delete-user;deleting-the-user",
+        "id": "check-login-page-feature-for-orangehrm;login-to-orangehrm-with-valid-credentials",
         "after": [
           {
             "result": {
@@ -178,59 +268,316 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "On some page",
-            "match": {
-              "location": "stepDefinition.HooksSteps.on_some_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Search for the existing user",
-            "match": {
-              "location": "stepDefinition.HooksSteps.search_for_the_existing_user()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
+              "duration": 248000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "Delete some user",
+            "name": "Enter username \"Admin\" and password \"admin123\"",
             "match": {
-              "location": "stepDefinition.HooksSteps.delete_some_user()"
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.OrangeHRMLoginSteps.enter_username_and_password(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1442000000,
               "status": "passed"
             },
             "line": 19,
-            "name": "User is deleted",
+            "name": "Click on login button",
             "match": {
-              "location": "stepDefinition.HooksSteps.user_is_deleted()"
+              "location": "stepDefinition.OrangeHRMLoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 581000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User must successfully login to the Dashboard page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4266000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5396000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch Chrome browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2041000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open OrangeHRM home page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_open_orange_hrm_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T22:41:14.822Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Login to OrangeHRM with valid credentials",
+        "description": "",
+        "id": "check-login-page-feature-for-orangehrm;login-to-orangehrm-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter username \"admin12\" and password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin12\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinition.OrangeHRMLoginSteps.enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"content\"]/div/div[1]/h1\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-5\u0027, revision: \u0027b3a0d621cc\u0027\nSystem info: host: \u0027DESKTOP-GL0QD93\u0027, ip: \u0027192.168.0.123\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\14165\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 24742c5e5d1e7764b775d52cdca59da3\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"content\"]/div/div[1]/h1}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:394)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)\r\n\tat stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page(OrangeHRMLoginSteps.java:59)\r\n\tat ✽.User must successfully login to the Dashboard page(file:///C:/sjDemo/Batch16CucumberUITests/Features/OrangeHRMLogin_Background.feature:26)\r\n",
+              "duration": 40000000,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "User must successfully login to the Dashboard page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6398000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch Chrome browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2437000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open OrangeHRM home page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.i_open_orange_hrm_home_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T22:41:23.041Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Login to OrangeHRM with valid credentials",
+        "description": "",
+        "id": "check-login-page-feature-for-orangehrm;login-to-orangehrm-with-valid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 458000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter username \"Admin\" and password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.OrangeHRMLoginSteps.enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1688000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 932000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User must successfully login to the Dashboard page",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 368000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.OrangeHRMLoginSteps.close_browser()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "To test add, edit and delete user",
+    "name": "Check login page feature for OrangeHRM",
     "description": "",
-    "id": "to-test-add--edit-and-delete-user",
+    "id": "check-login-page-feature-for-orangehrm",
     "keyword": "Feature",
-    "uri": "file:Features/Hooks.feature",
+    "uri": "file:Features/OrangeHRMLogin_Background.feature",
     "tags": []
   }
 ]

@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.597">
-<testcase classname="To test add, edit and delete user" name="Adding a user" time="0.173">
-<system-out><![CDATA[Given On some page..........................................................passed
-When Add some user..........................................................passed
-Then User is added..........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="59.342">
+<testcase classname="Check login page feature for OrangeHRM" name="Logo presence on OrangeHRM home page" time="12.743">
+<system-out><![CDATA[Given I launch Chrome browser...............................................passed
+When I open OrangeHRM home page.............................................passed
+Then I verify that the logo is present on the page..........................passed
+And Close browser...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To test add, edit and delete user" name="Editing the user" time="0.015">
-<system-out><![CDATA[Given On some page..........................................................passed
-When Search for the existing user...........................................passed
-And Edit some user..........................................................passed
-Then User is edited.........................................................passed
+<testcase classname="Check login page feature for OrangeHRM" name="Login to OrangeHRM with valid credentials" time="11.082">
+<system-out><![CDATA[Given I launch Chrome browser...............................................passed
+When I open OrangeHRM home page.............................................passed
+And Enter username and password.............................................passed
+And Click on login button...................................................passed
+Then User must successfully login to the Dashboard page.....................passed
+And Close browser...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To test add, edit and delete user" name="Deleting the user" time="0.015">
-<system-out><![CDATA[Given On some page..........................................................passed
-When Search for the existing user...........................................passed
-And Delete some user........................................................passed
-Then User is deleted........................................................passed
+<testcase classname="Check login page feature for OrangeHRM" name="Login to OrangeHRM with valid credentials 2" time="14.513">
+<system-out><![CDATA[Given I launch Chrome browser...............................................passed
+When I open OrangeHRM home page.............................................passed
+And Enter username "Admin" and password "admin123"..........................passed
+And Click on login button...................................................passed
+Then User must successfully login to the Dashboard page.....................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check login page feature for OrangeHRM" name="Login to OrangeHRM with valid credentials 3" time="8.199">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;content&quot;]/div/div[1]/h1&quot;}&#10;  (Session info: chrome=84.0.4147.105)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'&#10;System info: host: 'DESKTOP-GL0QD93', ip: '192.168.0.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\14165\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 24742c5e5d1e7764b775d52cdca59da3&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;content&quot;]/div/div[1]/h1}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I launch Chrome browser...............................................passed
+When I open OrangeHRM home page.............................................passed
+And Enter username "admin12" and password "admin123"........................passed
+And Click on login button...................................................passed
+Then User must successfully login to the Dashboard page.....................failed
+And Close browser...........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/div/div[1]/h1"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'DESKTOP-GL0QD93', ip: '192.168.0.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\14165\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 24742c5e5d1e7764b775d52cdca59da3
+*** Element info: {Using=xpath, value=//*[@id="content"]/div/div[1]/h1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at stepDefinition.OrangeHRMLoginSteps.user_must_successfully_login_to_the_dashboard_page(OrangeHRMLoginSteps.java:59)
+	at ✽.User must successfully login to the Dashboard page(file:///C:/sjDemo/Batch16CucumberUITests/Features/OrangeHRMLogin_Background.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="Check login page feature for OrangeHRM" name="Login to OrangeHRM with valid credentials 4" time="12.299">
+<system-out><![CDATA[Given I launch Chrome browser...............................................passed
+When I open OrangeHRM home page.............................................passed
+And Enter username "Admin" and password "admin123"..........................passed
+And Click on login button...................................................passed
+Then User must successfully login to the Dashboard page.....................passed
+And Close browser...........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

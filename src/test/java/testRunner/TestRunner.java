@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\sjDemo\\Batch16CucumberUITests\\Features\\Hooks.feature",
+		features = "C:\\sjDemo\\Batch16CucumberUITests\\Features\\OrangeHRMLogin_Background.feature",
 		// features = "@target/rerun.txt",
 		glue = "stepDefinition",
 		// tags = "@Sanity and @End2End",
