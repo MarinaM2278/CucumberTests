@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.597">
+<testcase classname="To test add, edit and delete user" name="Adding a user" time="0.173">
+<system-out><![CDATA[Given On some page..........................................................passed
+When Add some user..........................................................passed
+Then User is added..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test add, edit and delete user" name="Editing the user" time="0.015">
+<system-out><![CDATA[Given On some page..........................................................passed
+When Search for the existing user...........................................passed
+And Edit some user..........................................................passed
+Then User is edited.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test add, edit and delete user" name="Deleting the user" time="0.015">
+<system-out><![CDATA[Given On some page..........................................................passed
+When Search for the existing user...........................................passed
+And Delete some user........................................................passed
+Then User is deleted........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

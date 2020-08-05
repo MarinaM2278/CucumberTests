@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-05T19:38:58.064Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Adding a user",
+        "description": "",
+        "id": "to-test-add--edit-and-delete-user;adding-a-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "On some page",
+            "match": {
+              "location": "stepDefinition.HooksSteps.on_some_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add some user",
+            "match": {
+              "location": "stepDefinition.HooksSteps.add_some_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is added",
+            "match": {
+              "location": "stepDefinition.HooksSteps.user_is_added()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T19:38:58.276Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Editing the user",
+        "description": "",
+        "id": "to-test-add--edit-and-delete-user;editing-the-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "On some page",
+            "match": {
+              "location": "stepDefinition.HooksSteps.on_some_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Search for the existing user",
+            "match": {
+              "location": "stepDefinition.HooksSteps.search_for_the_existing_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Edit some user",
+            "match": {
+              "location": "stepDefinition.HooksSteps.edit_some_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is edited",
+            "match": {
+              "location": "stepDefinition.HooksSteps.user_is_edited()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-05T19:38:58.319Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Deleting the user",
+        "description": "",
+        "id": "to-test-add--edit-and-delete-user;deleting-the-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.HooksSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "On some page",
+            "match": {
+              "location": "stepDefinition.HooksSteps.on_some_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Search for the existing user",
+            "match": {
+              "location": "stepDefinition.HooksSteps.search_for_the_existing_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Delete some user",
+            "match": {
+              "location": "stepDefinition.HooksSteps.delete_some_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is deleted",
+            "match": {
+              "location": "stepDefinition.HooksSteps.user_is_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test add, edit and delete user",
+    "description": "",
+    "id": "to-test-add--edit-and-delete-user",
+    "keyword": "Feature",
+    "uri": "file:Features/Hooks.feature",
+    "tags": []
+  }
+]

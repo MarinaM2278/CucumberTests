@@ -1,0 +1,4 @@
+stepDefinition\HooksSteps.class
+stepDefinition\OrangeHRMLoginSteps.class
+stepDefinition\TaggingTest.class
+testRunner\TestRunner.class
